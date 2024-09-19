@@ -30,5 +30,6 @@ def insert_into_sorted_list(head: ListNode, val: int) -> ListNode:
 
 arr = [1, 2, 3, 3, 4, 5, 6]
 
-head = LinkedList.create_linked_list(arr)
+linked_list = LinkedList.create_linked_list(arr)
+head = insert_into_sorted_list(linked_list, 4)
 LinkedList.print_linked_list(head)
