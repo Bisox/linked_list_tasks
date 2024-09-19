@@ -29,7 +29,10 @@ def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optio
     return dummyNode.next 
 
 
-arr = [1, 2, 3, 4, 5, 6]
+arr1 = [1, 2, 3, 8, 10, 12]
+arr2 = [1, 4, 6, 7, 8, 10]
 
-head = LinkedList.create_linked_list(arr)
+linked_list1 = LinkedList.create_linked_list(arr1)
+linked_list2 = LinkedList.create_linked_list(arr2)
+head = mergeTwoLists(linked_list1, linked_list2)
 LinkedList.print_linked_list(head)
