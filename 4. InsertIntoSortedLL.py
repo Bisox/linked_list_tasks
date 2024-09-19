@@ -1,7 +1,7 @@
 from ListNode import ListNode, LinkedList
 
 def insert_into_sorted_list(head: ListNode, val: int) -> ListNode:
-    # Создаём новый узел
+    
     new_node = ListNode(val)
 
     
@@ -28,8 +28,8 @@ def insert_into_sorted_list(head: ListNode, val: int) -> ListNode:
     return head
 
 
-arr = [1, 2, 3, 3, 4, 5, 6]
+arr = [1, 2, 3, 5, 6]
 
 linked_list = LinkedList.create_linked_list(arr)
-head = insert_into_sorted_list(linked_list, 4)
+head = insert_into_sorted_list(linked_list, 0)
 LinkedList.print_linked_list(head)
