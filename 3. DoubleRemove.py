@@ -17,8 +17,8 @@ def double_remove(head: ListNode) -> ListNode:
 
 
 
-arr = [1, 2, 3, 3, 4, 5, 6]
+arr = [1, 1, 2, 3, 3, 4, 5, 6, 6]
 
 linked_list = LinkedList.create_linked_list(arr)
-head = double_remove(linked_list, 4)
+head = double_remove(linked_list)
 LinkedList.print_linked_list(head)
